@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Trophy, ShieldCheck, Award, Users, Star } from 'lucide-react';
+import { ArrowRight, Trophy, ShieldCheck, Award, Users, Star, Sparkles } from 'lucide-react';
 
 export default function Hero({ onExploreClick }) {
   return (
@@ -19,6 +19,15 @@ export default function Hero({ onExploreClick }) {
               <span className="text-gradient">Compete.</span>{' '}
               Inspire.
             </h1>
+
+            {/* Prominent & Professional Developer Attribution */}
+            <div className="hero-developer-badge">
+              <span className="dev-badge-pulse-glow"></span>
+              <Sparkles size={16} className="dev-badge-icon" />
+              <span className="dev-badge-label">
+                Developed by <strong className="dev-name-highlight">Kajamuthulakshmi M</strong>
+              </span>
+            </div>
 
             <p className="hero-description">
               Join talented participants from across the state and showcase your skills on a prestigious competition platform.
